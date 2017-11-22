@@ -53,7 +53,7 @@ public class TestVariable {
         String n = "20.20";
         //int age = Integer.parseInt(n);
         double age = Double.parseDouble(n);
-        System.out.println(age);;
+        System.out.println(age);
 
 
 
