@@ -11,8 +11,9 @@ import java.util.Scanner;
 public class CalGrade {
     public static  void  main (String[] args){
         Scanner scanner = new Scanner(System.in);
+
         int scor;
-        System.out.print("Enter your score: ");
+        System.out.print("100: ");
         scor = scanner.nextInt();
 //      test condition scor
         if (scor < 49)
@@ -24,5 +25,13 @@ public class CalGrade {
         else if (scor < 79)
             System.out.println("your grade is B");
         else System.out.println("your grade is A");
-    }
+
+
+
+
+
+
+
+
+        }
 }
