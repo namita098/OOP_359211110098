@@ -1,5 +1,5 @@
 package ooplap5;
-
+//ข้อสอบกลางภาค
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
