@@ -6,7 +6,7 @@ public class TestArrayList {
     public static void main(String[] args) {
         //ArrayList
         ArrayList list = new ArrayList();
-        list.add("SAM");
+        list.add("smild");
         list.add("BOY");
         list.add("GIRL");
         System.out.println(list);
