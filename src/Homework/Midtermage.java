@@ -11,14 +11,14 @@ public class Midtermage {
                 new InputStreamReader(System.in));
         int age;
         int check;
-        int a= 1;
+        int a=1;
         String i;
         do {
             do {
                 System.out.print("Enter Year" + a + ":");
                 i = reader.readLine();
                 check = Integer.parseInt(i);
-                age = 2560 - check;
+                age = 2565 - check;
                 System.out.print("Age"+a+": " + age);
                 System.out.println(" ");
                 a++;
@@ -26,6 +26,6 @@ public class Midtermage {
             while (a <=3);
         }
         while (a == 1);
-        System.out.println("Thank you");
+        System.out.println("Thank you.");
     }//mian
 }//class
