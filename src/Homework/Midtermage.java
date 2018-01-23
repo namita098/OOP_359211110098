@@ -28,4 +28,4 @@ public class Midtermage {
         while (a == 1);
         System.out.println("Thank you.");
     }//mian
-}//class
+}///class
