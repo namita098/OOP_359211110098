@@ -64,16 +64,16 @@ public class Supercar {
         this.countryoforigin = countryoforigin;
     }
 
-    private String countryoforigin;
+    public String countryoforigin;
         //Constructor เม็ดตอดที่มีชื่อเดียวกับคลาส
-        private Supercar(){}
+        public Supercar(){}
     public Supercar  (String a,String b,String c,String d,String e){
-        //assign data to properties
-        this.carbrand = a;
-        this.carcolor = b;
-        this.carenginesize = c;
-        this.maxspeed = d;
-        this.countryoforigin = e;
+            //assign data to properties
+            this.carbrand = a;
+            this.carcolor = b;
+            this.carenginesize = c;
+            this.maxspeed = d;
+            this.countryoforigin = e;
 
     }//Supercar
 }//class
