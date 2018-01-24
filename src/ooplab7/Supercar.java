@@ -4,7 +4,7 @@ package ooplab7;
 // 2.car color,
 // 3.car engine size,
 // 4.max speed
-// 5.country of origin
+// 5.country of origi
 
 public class Supercar {
         //properties of Supercar
