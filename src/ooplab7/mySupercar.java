@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class mySuperCar {
+public class mySupercar {
     public static void main(String[] args) {
         ArrayList<Supercar> myCarList = new ArrayList<Supercar>();
 
