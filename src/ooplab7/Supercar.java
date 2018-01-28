@@ -7,15 +7,26 @@ package ooplab7;
 // 5.country of origi
 
 public class Supercar {
-        //properties of Supercar
-        private String carbrand ;
-        private String carcolor;
-        private String carenginesize;
-        private String maxspeed;
+    //properties of Supercar
+    private String carbrand ;
+    private String carcolor;
+    private String carenginesize;
+    private String maxspeed;
+    private String countryoforigin;
+
+    public Supercar(){}
+    public Supercar (String brand, String color, String size, String speed, String origin){
+        this.carbrand = brand;
+        this.carcolor = color;
+        this.carenginesize = size;
+        this.maxspeed = speed;
+        this.countryoforigin = origin;
+
+    }
 
     @Override
     public String toString() {
-        return "Supercar{" +
+        return "SuperCar{" +
                 "carbrand='" + carbrand + '\'' +
                 ", carcolor='" + carcolor + '\'' +
                 ", carenginesize='" + carenginesize + '\'' +
@@ -63,17 +74,8 @@ public class Supercar {
     public void setCountryoforigin(String countryoforigin) {
         this.countryoforigin = countryoforigin;
     }
+    public String getSuperCarInfo(){
+        return getSuperCarInfo ();
+    }
 
-    public String countryoforigin;
-        //Constructor เม็ดตอดที่มีชื่อเดียวกับคลาส
-        public Supercar(){}
-    public Supercar  (String a,String b,String c,String d,String e){
-            //assign data to properties
-            this.carbrand = a;
-            this.carcolor = b;
-            this.carenginesize = c;
-            this.maxspeed = d;
-            this.countryoforigin = e;
-
-    }//Supercar
 }//class

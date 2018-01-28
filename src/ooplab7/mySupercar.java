@@ -1,0 +1,38 @@
+package ooplab7;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class mySupercar {
+    public static void main(String[] args) {
+        ArrayList<Supercar> myCarList = new ArrayList<Supercar>();
+
+        myCarList = inputData(myCarList);
+        System.out.println("== Show Super Car Info ==");
+        for (int i=0;i<myCarList.size();i++) {
+            System.out.println(myCarList.get(i).getSuperCarInfo());
+        }
+
+    }//main
+
+    private static ArrayList inputData(ArrayList myCarList) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Insert Supercar info: ");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Super car: " + (i + 1));
+            System.out.print("Brand: ");
+            String b = scanner.nextLine();
+            System.out.print("Color: ");
+            String c = scanner.nextLine();
+            System.out.print("Engine Size: ");
+            String e = scanner.nextLine();
+            System.out.print("Max Speed: ");
+            String m = scanner.nextLine();
+            Supercar car = new Supercar(b,c,e,m);
+            myCarList.add(car);
+        }
+        return myCarList;
+    }
+
+}//class
