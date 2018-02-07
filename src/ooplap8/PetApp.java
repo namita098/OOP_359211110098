@@ -1,6 +1,6 @@
-package ooplab8;
+package ooplap8;
 
-import ooplab9.cow;
+import ooplap9.Cow;
 
 public class PetApp {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class PetApp {
         System.out.println(dog.toString());
         dog.makeNoise();
         System.out.println(dog.msg);
-        cow cow = new cow("Namjai",5);
+        Cow cow = new Cow("Namjai",5);
         //System.out.println(cow.msg);
 
     }
