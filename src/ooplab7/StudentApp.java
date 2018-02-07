@@ -6,10 +6,10 @@ public class StudentApp {
     public static void main(String[] args) {
         //create object as Student
         //default constructor
-        Student s1 = new Student();
+        Student s1 = new Student("Boy Saiyai", "Male", "20/12/1990", 20, "STD0001", "IS:MT");
         s1.setId("001");
         s1.setName("Boy Saiyai");
-        s1.setAddress("109 M.2 T.Thungsomg A.Thungsung");
+        s1.setAddress("109 M.2 T.Thamyai A.Thungsong");
         s1.setGender("Male");
 
         System.out.println(s1.getName());
@@ -17,28 +17,31 @@ public class StudentApp {
 
         System.out.println(s1.toString());
 
-        Student s2 = new Student("002","Girl Saiyai","11/11 T.Tawang A.Miang","Female");
+        Student s2 = new Student("002", "Girl Saiyai",
+                "11/11 T.Tawang A.Muang",
+                "Female");
         System.out.println(s2.toString());
 
-        s2.setName("Girl Songkla");
+        s2.setName("Girl Shongkla");
         System.out.println(s2.toString());
-        //user assign sata to object
-        Student s3 = new Student();
+        //user assign data to object
+        Student s3 = new Student("Boy Saiyai", "Male", "20/12/1990", 20, "STD0001", "IS:MT");
         s3 = inputData(s3);
         System.out.println(s3.toString());
+        System.out.println(s3.group);
+        System.out.println(Student.group);
     }
-
     private static Student inputData(Student s) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a saudent info");
-        System.out.print("Student ID");
+        System.out.println("Please enter a student info: ");
+        System.out.print("Student ID: ");
         s.setId(scanner.nextLine());
-        System.out.print("Name : ");
+        System.out.print("Name: ");
         s.setName(scanner.nextLine());
-        System.out.print("Address : ");
+        System.out.print("Address: ");
         s.setAddress(scanner.nextLine());
-        System.out.print("Gender : ");
+        System.out.print("Gender: ");
         s.setGender(scanner.nextLine());
         return s;
     }//inputData
-}
+}//class

@@ -1,6 +1,6 @@
 package ooplab7;
 
-//1. car brand ,
+///1. car brand ,
 // 2.car color,
 // 3.car engine size,
 // 4.max speed

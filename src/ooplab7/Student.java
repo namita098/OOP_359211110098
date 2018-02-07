@@ -1,45 +1,40 @@
 package ooplab7;
 //talking about Student?
-    //1.student ID
-    //2.Name
-    //3.Address
-    //4.Gender
-
-
-
-
+// 1.Student ID
+// 2.Name
+// 3.Address
+// 4.Gender
 
 public class Student {
-    //properties of student
+    //properties of Student
+    static String group = "IS222";
     private String id;
-    private String Name;
+    private String name;
     private String address;
-    private String Gender;
-    //Constructor เม็ดตอดที่มีชื่อเดียวกับคลาส
+    private String gender;
+    //Constructor
     //Default Constructor
-    public Student (){}
-    //Constructor  by own
-    public Student (String id,String n,String a,String g){
+    public Student(String boy_saiyai, String male, String s, int i, String std0001, String s1){}
+    //Constructor by own
+    public Student(String id,String n,String a,String g){
         //assign data to properties
         this.id = id;
-        this.Name = n;
+        this.name = n;
         this.address = a;
-        this.Gender = g;
-
+        this.gender = g;
     }//Student
-    //getter and setter methodos
+    //getter and setter methods
 
 
     @Override
-    //@Overrideห้ามพิมพ์เอง
     public String toString() {
         return "Student{" +
                 "id='" + id + '\'' +
-                ", Name='" + Name + '\'' +
+                ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", Gender='" + Gender + '\'' +
+                ", gender='" + gender + '\'' +
                 '}';
-    }//Alt+ins toString
+    }
 
     public String getId() {
         return id;
@@ -50,11 +45,11 @@ public class Student {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getAddress() {
@@ -66,10 +61,10 @@ public class Student {
     }
 
     public String getGender() {
-        return Gender;
+        return gender;
     }
 
     public void setGender(String gender) {
-        Gender = gender;
+        this.gender = gender;
     }
 }//class
